@@ -28,6 +28,7 @@ class BillDetailViewController: UIViewController {
             print(bill.customername!)
             calculateTotalBillAmount()
             
+            //Set Values
             self.txtcustomername.text = electricitybill.customername
             self.txtgender.text = electricitybill.gender?.rawValue
             self.txttotalbill.text = String(format: "Total: %.2f",  electricitybill.totalbillamount!)
